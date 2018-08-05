@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/navigation_drawer_open"
+    android:fitsSystemWindows="true">
+    <!--
+    tools:openDrawer="start"
+    -->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/main_description"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        tools:context="br.com.cardapia.company.acessmap.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tool_bar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#48D1CC"
+            app:cardCornerRadius="@dimen/appbar_padding_top"
+            app:cardElevation="@dimen/appbar_padding_top"
+            app:contentPadding="@dimen/appbar_padding_top">
+
+            <TextView
+                android:id="@+id/lbl_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:nextFocusRight="@+id/lbl_welcome_points"
+                android:onClick="goToView"
+                android:text="@string/welcome_no_name"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lbl_welcome_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="60dp"
+                android:nextFocusDown="@id/txt_card_mapa"
+                android:onClick="goToView"
+                android:text="@string/welcome_pontos"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_welcome_coin"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/img_moeda"
+                android:onClick="goToView"
+                android:src="@drawable/coins" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/txt_init"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            android:importantForAccessibility="no"
+            android:contentDescription="@string/app_name_saud_init"
+            android:src="@drawable/logo_moovdis" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/selecione_menu"
+            android:fillViewport="true"
+            android:focusable="true">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_mapa"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_mapa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/action_map"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/maps_marker" />
+
+                    <TextView
+                        android:id="@+id/txt_card_mapa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_mapa"
+                        android:nextFocusRight="@+id/txt_card_places"
+                        android:text="@string/action_map"
+                        android:importantForAccessibility="no"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_places"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_places"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/action_places"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/baseline_store_mall_directory_black_48" />
+
+                    <TextView
+                        android:id="@+id/txt_card_places"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_places"
+                        android:nextFocusRight="@+id/txt_card_feeds"
+                        android:text="@string/action_places"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_feeds"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_feeds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/actions_feeds"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/news_icon" />
+
+                    <TextView
+                        android:id="@+id/txt_card_feeds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_feeds"
+                        android:nextFocusDown="@id/txt_card_placar"
+                        android:text="@string/actions_feeds"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_ranking"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/action_placar"
+                        android:padding="25dp"
+                        android:src="@drawable/poddium" />
+
+                    <TextView
+                        android:id="@+id/txt_card_placar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_ranking"
+                        android:nextFocusDown="@id/txt_card_assist"
+                        android:text="@string/action_placar"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_assist"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_assist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/action_virtual_assist"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/robot" />
+
+                    <TextView
+                        android:id="@+id/txt_card_assist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_assist"
+                        android:nextFocusRight="@+id/txt_card_event"
+                        android:text="@string/assist_virtual_name"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_events"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/action_event"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/baseline_event_black_48" />
+
+                    <TextView
+                        android:id="@+id/txt_card_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_event"
+                        android:nextFocusRight="@+id/txt_card_rotas"
+                        android:text="@string/action_event"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_routes"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_routes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/action_minhas_rotas"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/directions" />
+
+                    <TextView
+                        android:id="@+id/txt_card_rotas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_routes"
+                        android:text="@string/action_minhas_rotas"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_invite"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:onClick="goToView"
+                    app:cardCornerRadius="@dimen/bottom_navigation_elevation"
+                    app:cardElevation="@dimen/bottom_navigation_elevation">
+
+                    <ImageView
+                        android:id="@+id/img_atalho_invite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/action_invite_friends"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/if_invite_friends" />
+
+                    <TextView
+                        android:id="@+id/txt_card_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:labelFor="@id/img_atalho_invite"
+                        android:text="@string/action_invite_friends_short"
+                        android:textSize="16sp"
+                        android:importantForAccessibility="no"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/txt_init_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/last_markers"
+            android:textColor="@color/colorlightseagreen"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/indeterminateBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_last_markers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/line_row_last_markers" />
+
+        <!-- Itens Aqui -->
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_menu_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
+

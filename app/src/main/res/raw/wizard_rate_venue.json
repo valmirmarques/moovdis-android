@@ -1,0 +1,154 @@
+{ "count": "4",
+  "step1": {
+    "fields": [
+      {
+        "key": "lugarAcessivel",
+        "type": "radio",
+        "label": "Você considera este lugar acessível?",
+        "options": [
+          {
+            "key": "YES",
+            "text": "Acessível para pessoas com dificuldade de locomoção"
+          },
+          {
+            "key": "MID",
+            "text": "Parcialmente acessível para pessoas com dificuldade de locomoção"
+          },
+          {
+            "key": "NO",
+            "text": "Não acessível para pessoas com dificuldade de locomoção"
+          }
+        ]
+      }
+    ],
+    "title": "Avaliar acessibilidade",
+    "next": "step2"
+  },
+  "step2": {
+    "fields": [
+      {
+        "key": "hasEstacionamento",
+        "type": "radio",
+        "label": "Possui vaga de estacionamento reservada para cadeirante?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      },
+      {
+        "key": "hasEntradaBoa",
+        "type": "radio",
+        "label": "A entrada é boa para pessoas com dificuldade de locomoção?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      },
+      {
+        "key": "hasMapaTatil",
+        "type": "radio",
+        "label": "Possui mapa tátil do espaço interno em braile ou alto-relevo?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      }
+    ],
+    "title": "Facilidade de acesso",
+    "next": "step3"
+  },
+  "step3": {
+    "fields": [
+      {
+        "key": "hasCirculacaoInterna",
+        "type": "radio",
+        "label": "Há facilidade de circulação interna?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      },
+      {
+        "key": "hasWc",
+        "type": "radio",
+        "label": "Tem banheiro com acessibilidade?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      },
+      {
+        "key": "hasFraudario",
+        "type": "radio",
+        "label": "Tem banheiro familiar ou fraudário?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      },
+      {
+        "key": "hasMesa",
+        "type": "radio",
+        "label": "Tem mobiliário adaptado e reservado? (Exemplo, mesa em um restaurante reservada para cadeirantes)",
+        "options": [
+          {
+            "key": "true",
+            "text": "Sim"
+          },
+          {
+            "key": "false",
+            "text": "Não"
+          }
+        ]
+      }
+    ],
+    "title": "Espaço interno",
+    "next" : "step4"
+  },
+  "step4": {
+    "fields":[
+      {
+        "key":"comment",
+        "type":"edit_text",
+        "hint":"Escreva um comentário"
+      }
+    ],
+    "title": "Comentário"
+  }
+}

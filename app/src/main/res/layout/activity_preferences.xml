@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        tools:context="br.com.cardapia.company.acessmap.PreferencesActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <io.karim.MaterialTabs
+                android:id="@+id/tabsSwipeableView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/blind_min_height_touch_area_tab"
+                android:background="@drawable/tool_bar"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:mtPaddingMiddle="false"
+                app:mtSameWeightTabs="true" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/container_prefs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity=""
+                android:background="@drawable/gradient"
+                android:paddingBottom="50dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <!--
+                <android.support.v4.view.PagerTabStrip
+                    android:id="@+id/pager_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/tool_bar"
+                    android:contentDescription="@string/aba_description"
+                    android:minHeight="@dimen/blind_min_height_touch_area"
+                    android:textColor="#000000" />
+                    -->
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:contentDescription="@string/botao_salvar_description"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_menu_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
+

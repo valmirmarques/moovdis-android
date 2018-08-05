@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">news</string>
+
+    <string name="facebook_app_id">1676012855775799</string>
+    <string name="fb_login_protocol_scheme">fb1676012855775799</string>
+
+    <string name="invite_friends_market_url" translatable="false">https://k7vha.app.goo.gl/Ajzc</string>
+    <string name="invite_friends_market_url_short" translatable="false">https://k7vha.app.goo.gl/Ajzc</string>
+    <string name="invite_friends_market_url_image" translatable="false">https://lh3.googleusercontent.com/EKOZWRUuVZ4EEDDXRQ5DeS45GVMSIWPY-cVzz4-AuGJaNn2KxYxmgdIjmisPgGMnt9o=w300-rw</string>
+    <string name="invite_friends_toast_after_share">Você está enviando a URL do Google Play do Aplicativo Moovdis</string>
+    <string name="invite_friends_share_chooser">Compartilhar Moovdis</string>
+
+    <string name="app_name">Acessibilidade</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">Acessibilidade</string>
+
+
+    <string name="app_name_saud_init">Bem-vindo ao MoovDis</string>
+    <string name="app_name_saud_end">&#8230;seu caminho acessível</string>
+
+    <string name="plase_wait">Por favor, aguarde&#8230;</string>
+    <string name="ops">Algo deu errado</string>
+    <string name="toast_playservices_unrecoverable">Google Play Services está indisponível. Por favor, faça a instalação para continuar</string>
+
+
+    <string name="first_access">Olá, este é seu primeiro acesso. Por favor, faça seu cadastro no aplicativo.</string>
+
+    <!-- main -->
+    <string name="welcome">Olá %1$s</string>
+    <string name="welcome_no_name">Olá cidadão</string>
+    <string name="welcome_pontos">0</string>
+
+    <!-- prefs -->
+    <string name="action_begin">Início</string>
+    <string name="action_settings">Preferências</string>
+    <string name="action_map">Mapa</string>
+    <string name="action_placar">Placar</string>
+    <string name="action_minhas_rotas">Minhas rotas</string>
+    <string name="actions_feeds">Feeds</string>
+    <string name="action_virtual_assist">Assistente Virtual</string>
+    <string name="action_invite_friends">Convidar amigos</string>
+    <string name="action_invite_friends_short">+ amigos</string>
+    <string name="action_test">Teste</string>
+    <string name="action_about">Sobre o aplicativo</string>
+    <string name="assist_virtual_name">Cecy</string>
+
+
+    <string name="lets_start">Vamos começar?</string>
+    <string name="about_you">Sobre você</string>
+    <string name="botao_salvar_description">Clique no botão para salvar as configurações</string>
+    <string name="aba_description">Você está em Preferências. Existem duas abas para realizar as suas configurações do Sistema. Na primeira aba você configura suas definições e na segunda aba seus dados (Nome, E-mail e Data de Nascimento)</string>
+    <string name="config_sucesso">Configuração realizada com sucesso!!</string>
+
+    <!--Fragment 1 -->
+    <string name="imagem_cadeira_rodas">Imagem de cadeira de rodas</string>
+    <string name="text_desloco_cadeira">Se você se locomove em uma cadeira de rodas, serão utilizados as definições desta cadeira e serão sugeridos caminhos que são acessíveis ao seu equipamento</string>
+    <string name="text_sou_def_visual">Se você é deficiente visual não se preocupe. Nossa assistente virtual lhe guiará e o apoiará na utilização do aplicativo</string>
+    <string name="text_no_def">Que bom que você também está aqui. Suas contribuições ajudarão outros usuários a encontrar caminhos e locais mais acessíveis</string>
+    <string name="welcome_text">Bem-vindo ao MoovDis</string>
+    <string name="config_condition">Qual a sua atual condição?</string>
+    <string name="sou_def_visual">Sou deficiente visual</string>
+    <string name="uso_cadeira">Desloco-me em cadeira de rodas</string>
+    <string name="text_largura_cadeira">Largura da cadeira (cm)</string>
+    <string name="largura_cadeira_default">65</string>
+    <string name="cadeira_motorizada">Sua cadeira é motorizada?</string>
+    <string name="habilitado">Habilitado</string>
+    <string name="desabilitado">Desabilitado</string>
+    <string name="largura_cadeira">Largura da cadeira de rodas</string>
+    <string name="no_def">Não sou deficiente visual nem desloco-me em cadeira de rodas</string>
+    <string name="acessibilidade">Acessibilidade</string>s
+    <string name="acessibilidade_ativar">Deseja ajustar as configurações de acessibilidade do seu aparelho agora?</string>s
+    <string name="outras_defs">Possuo outra deficiência física</string>
+    <string name="informe_qual">Informe qual</string>
+    <string name="informe_helper">Informe se você possui outra deficiência ou usa aparelho para apoio à locomoção, como muleta ou andador, por exemplo.</string>
+
+    <!-- Fragment 2 -->
+    <string name="nome_usuario">Qual o seu nome?</string>
+    <string name="email_usuario">Qual o seu e-mail?</string>
+    <string name="data_nasc">Data de nascimento</string>
+    <string name="formato_data">DD/MM/AAAA</string>
+    <string name="tooltip_calendar">Clique no botão para exibir o calendário e selecionar a data de nascimento</string>
+    <string name="name">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="tooltip_foto">Clique no botão para tirar uma foto do seu perfil</string>
+    <string name="foto_perfil">Foto do seu perfil</string>
+    <string name="campo_obrigatorio">%1$s é obrigatório</string>
+    <string name="campo_invalido">%1$s é inválido</string>
+
+    <!-- mapa -->
+    <string name="search_address">Buscar endereço&#8230;</string>
+    <string name="touch_to_speak">Fale agora</string>
+    <string name="speech_not_supported">Desculpe! Seu dispositivo não aceita comando de voz</string>
+    <string name="speech_country">Suportado apenas português no momento</string>
+    <string name="tap_on_mic">Clique no botão do microfone para falar o endereço que deseja pesquisar</string>
+    <string name="report_access">Botão para reportar acessibilidade</string>
+    <string name="report_inaaccess">Botão para reportar inacessibilidade</string>
+    <string name="ocorrencia_sucesso">Marcação adicionada com sucesso!</string>
+    <string name="sidewalk_sucesso">Calçada adicionada com sucesso!</string>
+    <string name="ocorrencia_update_sucesso">Marcação atualizada com sucesso!</string>
+    <string name="current_position">Posição atual</string>
+    <string name="permission_denied">Permissão negada para acessar dispositivo</string>
+    <string name="map_not_read">Mapa não está pronto</string>
+    <string name="alertas_next">Existem %1$d alertas próximos a você</string>
+    <string name="alerta_next">Existe 1 alerta próximo a você</string>
+    <string name="rota">Rota</string>
+    <string name="rota_nao_encontrada">Nenhuma rota encontrada entre os pontos de origem e destino selecionados</string>
+    <string name="rota_longa">Rota Longa</string>
+    <string name="rota_experimental">Olá, esta é uma rota extensa. Como estamos em versão experimental, sugerimos a realização de rotas de até 1,5km. Caso deseje prosseguir, tome cuidado!</string>
+    <string name="versao_beta">Versão beta da rota. Seja cuidadoso! Ajude a melhorar o caminho reportando a acessibilidade da região.</string>
+    <string name="etapa">Etapas</string>
+    <string name="etapa_result">Imagem indicando que o conteúdo tem rolagem</string>
+    <string name="navigation">Navegar</string>
+    <string name="tracar_rota">Traçar rota para o endereço pesquisado</string>
+    <string name="info_distancia_no_alert"><![CDATA[Distância: <font color=\'#008000\'>%1$s</font> %2$s]]></string>
+    <string name="info_distancia_one_alert"><![CDATA[Distância: <font color=\'#008000\'>%1$s</font> - 1 alerta de atenção %2$s]]></string>
+    <string name="info_distancia"><![CDATA[Distância: <font color=\'#008000\'>%1$s</font> - %2$d alertas de atenção %3$s]]></string>
+    <string name="etapa_rota"><![CDATA[Partida em <font color=\'#1E90FF\'><b>%1$s</b></font> para chegar em <font color=\'#FFA500\'><b>%2$s</b></font>]]></string>
+    <string name="calcada_estreita"><![CDATA[<font color=\'red\' size=\'2\'> - Cuidado! Calçada estreita na rota</font>]]></string>
+    <string name="etapa_instruct">%2$s percorrendo %1$s </string>
+    <string name="etapa_principal">&lt;br&gt;&lt;br&gt;&lt;i&gt;Atenção! Estão sendo mostradas as etapas da rota principal. Entretanto existem rotas alternativas!!&lt;/i&gt;</string>
+    <string name="location_waiting">Não foi possível identificar a localização ou endereço pesquisado</string>
+    <string name="not_now">Cancelar</string>
+    <string name="sim_lets_go">Confirmar</string>
+    <string name="improve_marker">Melhore a qualidade da marcação deixando um comentário e adicionando uma foto</string>
+    <string name="comment">Escreva um comentário</string>
+    <string name="take_picture">Tirar uma foto da ocorrência</string>
+    <string name="thanks">Obrigado</string>
+    <string name="aba_description_route">Abas que indicam as alternativas de rotas</string>
+    <string name="next_route">Próxima rota</string>
+    <string name="previous_route">Rota anterior</string>
+    <string name="route_option">opcão de rota %1$d</string>
+    <string name="elevation_description">imagem descrevendo a elevação da rota</string>
+    <string name="inform_sidewal_type">Informar o tipo da calçada</string>
+    <string name="falha_route">Desculpe, houve uma falha ao calcular a rota desejada.</string>
+    <string name="calc_route">Calculando Rota</string>
+    <string name="no_weelchair_route">Não foi possível determinar uma rota segura para Cadeira de Rodas. Calculando rota por caminhada. Tome cuidado!</string>
+    <string name="try_again">Aguarde! Ainda estou tentando calcular a rota</string>
+
+    <!-- markers -->
+    <string name="danger_obstacule">Defeito na Calçada</string>
+    <string name="rampa_access">Rampa de Acesso</string>
+    <string name="restroom_acessible">Banheiro Acessível</string>
+    <string name="bus">Ônibus Piso Baixo</string>
+    <string name="blind_guideline">Guia na calçada</string>
+    <string name="parking">Estacionamento</string>
+    <string name="traffic_light_sound">Semáforo sonoro</string>
+    <string name="sports">Esporte</string>
+    <string name="barrier">Barreira</string>
+    <string name="hole">Buraco</string>
+    <string name="building">Obra</string>
+    <string name="crims">Criminalidade</string>
+    <string name="trash_can">Caçamba na Calçada</string>
+    <string name="not_acessibible_walk">Falta de rampa de acesso</string>
+    <string name="stairs">Escada</string>
+    <string name="sidewalk_width">Calçada estreita</string>
+
+    <string name="sidewalk_type">Tipo de Calçada</string>
+    <string name="calc_type_1">Paver</string>
+    <string name="calc_type_2">Grama</string>
+    <string name="calc_type_3">Calçadão</string>
+    <string name="calc_type_4">Pedra Sabão</string>
+    <string name="calc_type_5">Bloquete</string>
+    <string name="calc_type_6">Concreto</string>
+    <string name="calc_type_7">Terra</string>
+    <string name="calc_type_8">Asfalto</string>
+    <string name="calc_type_9">Pedra</string>
+    <string name="grau_dificuldade">Grau de dificuldade para locomoção</string>
+
+    <string name="grau_0">Indeterminado</string>
+    <string name="grau_1">Muito Fácil</string>
+    <string name="grau_2">Fácil</string>
+    <string name="grau_3">Moderado</string>
+    <string name="grau_4">Difícil</string>
+    <string name="grau_5">Muito Difícil</string>
+
+    <string name="img_selected">Imagem de calçada escolhida</string>
+    <string name="touch_map_sidewalk">Toque no mapa para adicionar a localização do início e do fim desta calçada</string>
+
+    <string name="sucess_marker">Obrigado! Sua marcação foi realizada com sucesso.</string>
+    <string name="help_more">Melhore a qualidade da marcação adicionando um comentário e uma foto do local.</string>
+
+    <string name="cancel_marker">Cancelar Marcação</string>
+    <string name="cancel_marker_detail">Deseja realmente cancelar a marcação da ocorrência?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string name="distance_metros">%s metros</string>
+    <string name="sidewalk_mark_validadtion">Você precisa marcar o local de início e fim deste tipo de calçada no mapa</string>
+
+
+    <!-- Menu -->
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="menu_description">Clique no botão para exibir o menu</string>
+
+    <!-- Placar -->
+    <string name="title_activity_scoreboard">Placar</string>
+    <string name="meu_placar">meu placar</string>
+    <string name="placar_geral">placar geral</string>
+    <string name="placar_semanal">placar semanal</string>
+    <string name="desc_placar_semanal">O placar semanal é renovado toda semana. Quer ver as regras?</string>
+    <string name="desc_placar_geral">Este é o placar geral. Aqui é mostrada a pontuação dos usuários que mais contribuiram com informações de acessibilidade! Seu nome não está aqui? Não desanime. Contribua e chegue no topo do Ranking</string>
+    <string name="regras_pontos">Regras de pontuação</string>
+    <string name="quantidade_pontos">%s pontos</string>
+    <string name="ok">OK</string>
+    <string name="placar_position">%sº</string>
+    <string name="regras_description">A cada marcação de ocorrência de acessibilidade no mapa você ganha moedas. É perfeito, quando ao final de uma rota você deixa seu feedback, pois você acumula moedas em dobro! O Placar é redefinido todo domingo à meia-noite. Você é um cidadão que faz a diferença!</string>
+    <string name="img_trofeu">Imagem de um pódio com um troféu</string>
+    <string name="img_moeda">Imagem que representa moedas. Direciona para a tela de placar.</string>
+    <string name="foto_perfil_placar">Foto do Perfil do Usuário que está nesta posição do Placar</string>
+    <string name="posicao_placar_geral">Posição no placar geral</string>
+    <string name="nome_pessoa">Nome do cidadão</string>
+    <string name="qtde_moedas">Quantidade de moedas</string>
+    <string name="desc_placar_individual">%1$s, este é o seu placar individual. Nele é mostrado todas as suas atividades e contribuições para tornar nossas cidades mais acessíveis</string>
+    <string name="voce_usuario">Você é um usuário</string>
+    <string name="no_info">Sem informação</string>
+    <string name="voce_tem_moedas">Você tem %1$d moedas</string>
+    <string name="meta_moedas">Atinja %1$d moedas para se tornar %2$s</string>
+    <string name="qtde_marcacoes">%1$d marcações</string>
+    <string name="qtde_fotos">%1$d fotos</string>
+    <string name="voce_realizou">Você realizou&#8230;</string>
+    <string name="parabens_cidadao">Parabéns. Você é um usuário avançado</string>
+    <string name="apauso_description">Aplausos&#8230; Parabéns Cidadão</string>
+    <string name="nivel_novato">Iniciante</string>
+    <string name="nivel_aplicado">Aplicado</string>
+    <string name="nivel_avancado">Avançado</string>
+    <string name="moeda">moedas</string>
+    <string name="info_not_found">Nenhuma informação encontrada</string>
+    <string name="not_cad">Usuário não cadastrado!</string>
+    <string name="do_cad">Não é possível acessar o seu placar individual. Primeiro faça seu cadastro através do menu Preferências.</string>
+    <string name="anonymus">Anônimo</string>
+
+
+    <!-- ASSISTENTE VIRTUAL -->
+    <string name="virtual_assistant_label">Assistente Virtual</string>
+    <string name="tap_on_mic_assitant">Toque para ativar sua conversa com o assistente virtual</string>
+    <string name="assistant_saudation">Olá!! Sou a Cecy, sua assistente virtual.</string>
+    <string name="touch_robot">Para falar comigo, é só tocar no centro da tela.</string>
+    <string name="show_me_here">Me mostre o que tem aqui</string>
+    <string name="please_wait_analizyng">Por favor aguarde! Estou analizando a imagem!</string>
+    <string name="sorry_analizyng">Desculpe, não consegui analizar a imagem. Por favor, tente novamente!</string>
+    <string name="sorry_watson">Desculpe, ocorreu uma falha. Pode tentar novamente?</string>
+    <string name="sorry_language">Desculpe, ai ainda só falo português. Por favor, mude o idioma do seu dispositivo e tente novamente </string>
+    <string name="no_network">Eu preciso da Internet para me comunicar. Por favor, habilite-a</string>
+    <string name="allow_location">Para uma melhor experiência, ative a localização do seu aparelho</string>
+    <string name="location_activate">Para continuar, por favor, habilite a localização no seu aparelho</string>
+
+
+    <!-- FEEDS -->
+    <string name="feed_label">Feeds</string>
+    <string name="feed_not_found">Nenhum feed encontrado</string>
+    <string name="foto_user_feed">Foto do usuário do Twitter</string>
+    <string name="twitte"><![CDATA[<font color=\'#1E90FF\'>%1$s</font> %2$s <font color=\'#FFA500\'>%3$s</font>]]></string>
+
+
+    <!-- ROUTES -->
+    <string name="do_cad_routes">Não é possível exibir as suas rotas. Primeiro faça seu cadastro através do menu Preferências.</string>
+    <string name="imagem_rota">Imagem de um mapa</string>
+    <string name="route_from">Saindo de:</string>
+    <string name="route_to">Indo para:</string>
+    <string name="description_add_comment">Clique para adicionar um comentário</string>
+    <string name="like">Gostei (%1$d)</string>
+    <string name="liked">Gostei</string>
+    <string name="not_liked">Não gostei</string>
+    <string name="feedback_description">Conte para nós qual sua experiência ao fazer esta rota</string>
+    <string name="share_social_nw">Compartilhar sua rota em redes sociais</string>
+    <string name="cancel">Cancelar</string>
+    <string name="de_sua_nota">Dê a sua nota</string>
+    <string name="public_feedback">Outros usuários podem ver meu depoimento?</string>
+    <string name="sucess_sharing">Obrigado</string>
+    <string name="cancel_sharing">Compartilhamento cancelado</string>
+    <string name="erro_sharing">Ocorreu um erro ao realizar o compartilhamento</string>
+    <string name="app_not_instaled">Aplicativo não instalado</string>
+    <string name="share_intent_title">Compartilhar</string>
+    <string name="i_did_route">Fiz uma rota utilizando o Moovdis, o seu aplicativo de acessibiidade.</string>
+
+    <string name="dummy_text">Desde o início da tarde desta quinta-feira (9), os órgãos públicos de Batalha, no sertão alagoano, estão de portas fechadas. A cidade está com ruas quase vazias e ocupadas por mais de 50 policiais&#8230;.Tudo isso foi causado pela tensão e pelo medo da população após o assassinato do vereador Adelmo Rodrigues de Melo, o Neguinho Boiadeiro (PSD), ocorrido na porta dsa Câmara Municipal naquele dia&#8230; </string>
+    <string name="dummy_text_short">Bla bla bla</string>
+
+    <string name="back">Voltar para a tela inicial</string>
+
+
+    <string name="estrela_instruc">Dê uma nota de uma a 5 estrelas para a rota realizada</string>
+    <string name="click_line_instruc">Clique na linha para obter mais detalhes. Você será redirecionado para um aplicativo externo</string>
+
+    <string name="main_description">Você está na tela inicial do aplicativo. Aqui você pode acionar a assistente virtual ou ir para uma das telas: Mapa, Locais, Agenda de Eventos, Feeds, Placar, Preferências do Sistema ou Rotas Realizadas</string>
+    <string name="maps_description">Você está na tela de Mapas. Aqui você pode reportar ocorrências, pesquizar endereços e traçar rotas</string>
+    <string name="local_description">Pesquisar Local ou Negócio</string>
+
+    <string name="local_photo_desc">Foto da Marcação</string>
+    <string name="location_not_determinated">Localização ainda não determinada</string>
+
+
+    <!-- Invite -->
+    <string name="invite_facebook">Amigos do Facebook</string>
+    <string name="invite_google">Amigos do Google</string>
+    <string name="invite_whats">Amigos do Whatsapp</string>
+    <string name="friends_image">Imagem de amigos</string>
+    <string name="action_invite_friends_moovdis">Convidar amigos para o Moovdis</string>
+    <string name="download_moovdis">Instale o Moovdis agora mesmo e ajude a mapear a acessibilidade das cidades</string>
+    <string name="invite_request">Informe seus amigos sobre o aplicativo e divirtam-se juntos</string>
+
+
+    <!-- Detail -->
+    <string name="no_exist">Ocorrência Não Existe</string>
+    <string name="delete_marker">Apagar Marcação</string>
+    <string name="delete_marker_info">Ao confirmar, esta marcação será removida do Mapa</string>
+    <string name="tipo_marcacao">Tipo da Marcação</string>
+    <string name="no_comments">Nenhum comentário adicionado</string>
+    <string name="endereco_marker">Endereço da marcação</string>
+
+    <string name="next">Prosseguir</string>
+    <string name="page_1_2">Etapa 1 de 2</string>
+
+    <!-- about -->
+    <string name="about_detail">Parte de um projeto do grupo de pesquisa em Inteligência Coletiva da UTFPR, o  Moovdis tem o objetivo de promover a inclusão de social de pessoas com deficiência física e visual levando em consideração as diversas dificuldades que enfrentam em seu deslocamento do dia-a-dia.</string>
+    <string name="about_detail_1">Através de uma rápida contribuição, você pode contribuir para melhoria da sua cidade mapeando a acessibilidade urbana, tais como: informar um buraco em calçada, obra, criminalidade, ou ainda, mapear coisas boas, como: rampa de acessibilidade, prática de esportes para deficientes, pontos de ônibus, etc.</string>
+    <string name="about_detail_2">Também é possível obter notícias sobre acessibilidade que estão rolando em redes sociais.</string>
+    <string name="about_detail_3">Contribua e caso tenha sugestões para melhoria, nos mande uma mensagem.</string>
+    <string name="send_feedback_mail">Enviar um e-mail de sugestão para os desenvolvedores</string>
+
+    <string name="email_title">Sugestões para o Moovdis</string>
+    <string name="email_action">Enviar E-mail para o Moovdis</string>
+
+    <!-- GOOGLE STRINGS -->
+
+    <string name="demo_title">Google Maps API Demos</string>
+    <string name="no_demos">No demos</string>
+    <string name="play_services_not_installed">Google Play services is not installed on this device.</string>
+
+    <string name="alpha">Alpha</string>
+    <string name="animate">Animate</string>
+    <string name="basic_map_demo_label">Basic Map</string>
+    <string name="basic_map_demo_description">Launches a map.</string>
+    <string name="buildings">Buildings</string>
+    <string name="camera_demo_label">Camera</string>
+    <string name="camera_demo_description">Demonstrates camera functions.</string>
+    <string name="circle_demo_label">Circles</string>
+    <string name="circle_demo_description">Demonstrates how to add Circles to a map.</string>
+
+    <string name="camera_clamping_demo_label">Camera Clamping</string>
+    <string name="camera_clamping_demo_description">Demonstrates how to constrain the camera to specific boundaries and zoom levels.</string>
+    <string name="clamp_latlng_adelaide">Clamp to Adelaide</string>
+    <string name="clamp_latlng_pacific">Clamp to Pacific</string>
+    <string name="clamp_latlng_reset">Reset LatLng Bounds</string>
+    <string name="clamp_min_zoom">MinZoom++</string>
+    <string name="clamp_max_zoom">MaxZoom--</string>
+    <string name="clamp_zoom_reset">Reset Zoom Bounds</string>
+
+    <string name="clear_map">Clear</string>
+    <string name="clickable">Clickable</string>
+    <string name="color">Color</string>
+    <string name="compass">Compass</string>
+    <string name="custom_info_contents">Custom info contents</string>
+    <string name="custom_info_window">Custom info window</string>
+    <string name="default_info_window">Default info window</string>
+    <string name="down_arrow">\u2193</string>
+    <string name="drag_melbourne">Drag Melbourne</string>
+    <string name="duration">Custom Duration</string>
+    <string name="events_demo_label">Events</string>
+    <string name="events_demo_description">Demonstrates event handling.</string>
+    <string name="fade_in">Fade In Tiles</string>
+    <string name="fill_alpha">Fill Alpha</string>
+    <string name="fill_hue">Fill Hue</string>
+    <string name="flat">Flat</string>
+    <string name="go_to_bondi">Go to Bondi</string>
+    <string name="go_to_santorini">Go to Santorini</string>
+    <string name="go_to_sydney">Go to Sydney</string>
+    <string name="ground_overlay_demo_label">Ground Overlays</string>
+    <string name="ground_overlay_demo_description">Demonstrates how to add a GroundOverlay to a map.</string>
+    <string name="hue">Hue</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="indoor">Indoor</string>
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/hybrid</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+        <item>@string/none_map</item>
+    </string-array>
+    <string name="layers_demo_label">Layers</string>
+    <string name="layers_demo_description">Demonstrates the different map layers.</string>
+    <string name="left_arrow">\u2190</string>
+    <string name="location_source_demo_label">Location Source Demo</string>
+    <string name="location_source_demo_description">Demonstrates how to use a custom location source.</string>
+    <string name="map_circle_description">Google Map with circles.</string>
+    <string name="map_not_ready">Mapa ainda não está pronto</string>
+    <string name="map_in_pager_demo_label">Map In Pager</string>
+    <string name="map_in_pager_demo_description">Demonstrates how to add a map to a ViewPager.</string>
+    <string name="marker_demo_label">Markers</string>
+    <string name="marker_close_info_window_on_retap_demo_label">Marker Close Info Window on Retap</string>
+    <string name="marker_close_info_window_on_retap_demo_description">Demonstrates how to close the info window when the currently selected marker is retapped.</string>
+    <string name="marker_demo_description">Demonstrates how to add Markers to a map.</string>
+    <string name="move_the_camera">Move the camera</string>
+    <string name="multi_map_demo_label">Multiple Maps</string>
+    <string name="multi_map_demo_description">Demonstrates how to show multiple maps in a single activity.</string>
+    <string name="my_location">My Location</string>
+    <string name="my_location_demo_label">My Location Demo</string>
+    <string name="my_location_demo_description">Demonstrates how to use GMS Location.</string>
+    <string name="mylocation_button">My Location Button</string>
+    <string name="mylocation_layer">My Location Layer</string>
+    <string name="none_map">None</string>
+    <string name="normal">Normal</string>
+    <string name="options_demo_label">Options</string>
+    <string name="options_demo_description">Demonstrates how to use Options to initialize a map.</string>
+    <string name="polygon_demo_label">Polygons</string>
+    <string name="polygon_demo_description">Demonstrates how to add Polygons to a map.</string>
+    <string name="polyline_demo_label">Polylines</string>
+    <string name="polyline_demo_description">Demonstrates how to add Polylines to a map.</string>
+    <string name="programmatic_demo_label">Programmatically add map</string>
+    <string name="programmatic_demo_description">Demonstrates how to add a MapFragment programmatically.</string>
+    <string name="properties_circle">Properties for Circle(s)</string>
+    <string name="properties_australia_polyline">Properties for Polyline over Australia</string>
+    <string name="properties_australia_polygon">Properties for Polygon over Australia</string>
+    <string name="rotate">Rotate Gestures</string>
+    <string name="raw_map_view_demo_label">Raw MapView</string>
+    <string name="raw_map_view_demo_description">Demonstrates how to use a raw MapView.</string>
+    <string name="reset_map">Reset</string>
+    <string name="retain_map_demo_label">Retain map</string>
+    <string name="retain_map_demo_description">Demonstrates how to reuse a MapFragment.</string>
+    <string name="right_arrow">\u2192</string>
+    <string name="rotation">Rotation:</string>
+    <string name="satellite">Satellite</string>
+    <string name="save_state_demo_label">Save the state of a MapFragment.</string>
+    <string name="save_state_demo_description">Demonstrates how to save the state of a MapFragment upon rotation of the device.</string>
+    <string name="save_state_instructions">Drag the marker, tap on it to change its color and rotate the device to check that the state of the map is preserved.</string>
+    <string name="scroll">Scroll Gestures</string>
+    <string name="snapshot_clear_button">Clear</string>
+    <string name="snapshot_demo_label">Snapshot</string>
+    <string name="snapshot_demo_description">Demonstrates how to take a snapshot of the map.</string>
+    <string name="snapshot_holder_description">Area for the map snapshot.</string>
+    <string name="snapshot_take_button">Take snapshot</string>
+    <string name="stop_animation">\u25A0</string>
+    <string name="stroke_alpha">Stroke Alpha</string>
+    <string name="stroke_hue">Stroke Hue</string>
+    <string name="stroke_joint_type">Stroke Joint Type</string>
+    <string name="stroke_pattern">Stroke Pattern</string>
+    <string name="stroke_width">Stroke Width</string>
+    <string name="swipe">\u2190 Swipe \u2192</string>
+    <string name="switch_image">Switch Image</string>
+    <string name="tags_demo_label">Tags</string>
+    <string name="tags_demo_description">Demonstrates how to get and set tags on API objects.</string>
+    <string name="tags_demo_map_description">Map with a circle, ground overlay, marker, polygon and polyline.</string>
+    <string name="tap_instructions">Tap or long press on the map</string>
+    <string name="terrain">Terrain</string>
+    <string name="tile_coordinate_demo_label">Tile Coordinate Overlay</string>
+    <string name="tile_coordinate_demo_description">Demonstrates how to add a tile overlay with tile coordinates to a map.</string>
+    <string name="tile_overlay_demo_label">Tile Overlays</string>
+    <string name="tile_overlay_demo_description">Demonstrates how to add a tile overlay to a map.</string>
+    <string name="tilt">Tilt Gestures</string>
+    <string name="tilt_less">\u2193</string>
+    <string name="tilt_more">\u2191</string>
+    <string name="traffic">Traffic</string>
+    <string name="transparency">Transparency</string>
+    <string name="ui_settings_demo_label">UI Settings</string>
+    <string name="ui_settings_demo_description">Demonstrates how to alter user interface settings.</string>
+    <string name="up_arrow">\u2191</string>
+    <string name="visible_region_demo_label">Visible Regions</string>
+    <string name="visible_region_demo_description">Demonstrates how to use Visible Regions.</string>
+    <string name="vr_aus_button">AUS</string>
+    <string name="vr_normal_button">Normal</string>
+    <string name="vr_more_padded_button">More</string>
+    <string name="vr_soh_button">SOH</string>
+    <string name="vr_sfo_button">SFO</string>
+    <string name="wait_for_map_load">Wait for Map Load</string>
+    <string name="width">Width</string>
+    <string name="zoom_buttons">Zoom Buttons</string>
+    <string name="zoom_gestures">Zoom Gestures</string>
+    <string name="zoom_in">+</string>
+    <string name="zoom_out">-</string>
+
+    <!-- Polyline/polygon styling -->
+    <string name="start_cap">Start cap</string>
+    <string name="end_cap">End cap</string>
+    <string name="joint_type">Joint Type</string>
+    <string name="pattern">Pattern</string>
+    <string name="cap_butt">Butt</string>
+    <string name="cap_square">Square</string>
+    <string name="cap_round">Round</string>
+    <string name="cap_image">Image</string>
+    <string name="joint_type_default">Default</string>
+    <string name="joint_type_bevel">Bevel</string>
+    <string name="joint_type_round">Round</string>
+    <string name="pattern_solid">Solid</string>
+    <string name="pattern_dotted">Dotted</string>
+    <string name="pattern_dashed">Dashed</string>
+    <string name="pattern_mixed">Mixed</string>
+
+    <!-- Lite Mode -->
+    <string name="grid">Grid</string>
+    <string name="lite_demo_label">Lite Mode</string>
+    <string name="lite_demo_description">Demonstrates some features on a map in lite mode.</string>
+    <string name="lite_demo_intro">Click the map with no, one or multiple markers displayed to open the Google Maps Mobile app.</string>
+    <string name="lite_go_to_darwin">Go to Darwin (No Markers)</string>
+    <string name="lite_go_to_adelaide">Go to Adelaide (One Marker)</string>
+    <string name="lite_go_to_australia">Go to Australia (Five Markers)</string>
+    <string name="linear">Linear</string>
+    <string name="lite_list_demo_label">Lite Mode List</string>
+    <string name="lite_list_demo_description">Demonstrates using maps in lite mode in a RecyclerView using LinearLayoutManager and GridLayoutManager.</string>
+
+    <!--     Indoor    -->
+    <string name="activate_higher_level">Activate Higher Level</string>
+    <string name="focused_building_info">Focused Building</string>
+    <string name="focused_level_info">Focused Level</string>
+    <string name="indoor_demo_description">Demonstrates how to use the Indoor API.</string>
+    <string name="indoor_demo_label">Indoor</string>
+    <string name="toggle_level_picker">Toggle Level Picker</string>
+
+    <!--    Streetview    -->
+    <string name="go_to_invalid">Go to Invalid Point</string>
+    <string name="go_to_san_fran">Go to San Fran</string>
+    <string name="navigate_to_another_panorama">navigate to another panorama</string>
+    <string name="pan_camera">pan camera</string>
+    <string name="panning">Panning Gestures</string>
+    <string name="panorama_not_ready">Panorama is not ready yet</string>
+    <string name="request_position">Position</string>
+    <string name="split_street_view_panorama_and_map_demo_description">Demonstrates how to show a Street View panorama and map.</string>
+    <string name="split_street_view_panorama_and_map_demo_label">Street View Panorama and Map</string>
+    <string name="street_view_panorama_basic_demo_description">Standard Street View Panorama using a Fragment.</string>
+    <string name="street_view_panorama_basic_demo_label">Street View Panorama</string>
+    <string name="street_view_panorama_events_demo_description">Standard Street View Panorama with event handling.</string>
+    <string name="street_view_panorama_events_demo_label">Street View Panorama events</string>
+    <string name="street_view_panorama_navigation_demo_description">Street View Panorama with programmatic navigation.</string>
+    <string name="street_view_panorama_navigation_demo_label">Street View Panorama navigation</string>
+    <string name="street_view_panorama_options_demo_description">Street View Panorama with toggles for options.</string>
+    <string name="street_view_panorama_options_demo_label">Street View Panorama options</string>
+    <string name="street_view_panorama_view_demo_description">Standard Street View Panorama using a View.</string>
+    <string name="street_view_panorama_view_demo_label">Street View Panorama View</string>
+    <string name="streetnames">Streetnames</string>
+    <string name="tap_screen">tap screen</string>
+    <string name="long_press_screen">long press screen</string>
+    <string name="walk_panorama">Walk</string>
+
+    <!--    Styling    -->
+    <string name="styled_map_demo_label">Styled Map</string>
+    <string name="styled_map_demo_description">Demonstrates how to style a map.</string>
+    <string name="style_label_retro">Retro</string>
+    <string name="style_label_night">Night</string>
+    <string name="style_label_grayscale">Grayscale</string>
+    <string name="style_label_no_pois_no_transit">No POIs or transit</string>
+    <string name="style_label_default">Default</string>
+    <string name="style_choose">Choose style</string>
+    <string name="style_set_to">Style set to: %1$s</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+    <!-- -->
+
+    <string name="failed_connection">Falha na conexão com o servidor. Verifique sua conexão!</string>
+    <string name="arrastar">Arrastar o marcador</string>
+    <string name="touch_arrastar">Pressione longamente para arrastar\n o marcador e ajustar a localização</string>
+    <string name="can_arrastar">Você pode arrastar a marcacão para ajustar o local caso necessário</string>
+    <string name="adjusted_location">Você ajustou a localização do marcador</string>
+
+    <!-- Camera Utils -->
+
+    <string name="activity_camera_intent_photo_uri_found">Foto uri encontrado: </string>
+    <string name="activity_camera_intent_photo_uri_not_found">Foto uri não encontrado!</string>
+    <string name="warning_camera_intent_canceled">Foto cancelada pelo usuário.</string>
+    <string name="error_sd_card_not_mounted">Armazenamento externo é necessário. Seu cartão SD provavelmente não está montado.</string>
+    <string name="error_could_not_take_photo">Houve um problema com sua câmera. Lamentamos muito pela inconveniência!</string>
+    <string name="error_sth_went_wrong">Algo deu errado. Por favor, tente novamente.</string>
+
+
+    <!-- Messages -->
+    <string name="gera_pontos">Gerando Pontos</string>
+    <string name="ponto_partida">Ponto de Partida</string>
+    <string name="salvando_ocorrencia">Salvando ocorrência</string>
+    <string name="saving_route">Salvando rota</string>
+    <string name="rec_info">Recuperando informações</string>
+    <string name="generate_like">Gerando Like</string>
+    <string name="apagar_ocorrencia">Apagando ocorrência</string>
+    <string name="save_user">Salvando dados do usuário</string>
+    <string name="recover_user">Recuperando informações do usuário</string>
+    <string name="recover_router">Recuperando suas rotas</string>
+    <string name="saving">Salvando</string>
+    <string name="recover_scoreboard">Recuperando placar</string>
+    <string name="recover_feed">Recuperando Feeds&#8230;</string>
+
+    <string name="rolagem_horizontal">Existe uma barra de rolagem horizontal para escolha de opções do menu</string>
+    <string name="line_markers">é exibida em cada linha as ultimas marcações realizadas pelos usuários</string>
+    <string name="image_marker">Imagem da Marcação</string>
+
+    <string name="last_markers">últimas marcações</string>
+    <string name="ver_no_mapa">Ver no Mapa</string>
+    <string name="two_friends">Imagem de dois gatinhos abraçados. Significa dois amigos abraçados</string>
+
+    <!-- Eventos -->
+    <string name="action_event">Agenda de Eventos</string>
+    <string name="failed_open_url">Nenhum aplicativo pode manipular essa solicitação. Por favor, instale um navegador da web ou verifique sua URL.</string>
+    <string name="events_description">é exibida em cada linha um evento de acessibilidade que deverá acontecer em uma determinada data</string>
+    <string name="banner_event">Image de fundo que mostra o banner do evento</string>
+    <string name="no_social_network">Facebook não disponível</string>
+    <string name="divulgue_evento">Divulgue seu evento gratuitamente.\nEntre em contato por e-mail: acessibilidade.moovdis.app@gmail.com</string>
+    <string name="email_divulgue_title">Quero divulgar meu evento</string>
+    <string name="email_divulgue_text">Nome do evento:\nBreve descrição:\nData do evento:\nLocal:\nWebsite do evento:\nFacebook:\nNome e telefone para contato:\n\n\nFavor anexar uma imagem de banner de divulgação. Esta é a imagem principal que será exibida no aplicativo para divulgar o seu evento.</string>
+
+    <!-- places -->
+    <string name="action_places">Locais</string>
+    <string name="places_description">é exibida em cada linha um estabelecimento encontrado na região ou através de pesquisa. Clique na linha para marcar a acessibilidade do estabelecimento</string>
+    <string name="banner_places">Image de fundo que mostra a foto do estabelecimento</string>
+    <string name="venue_distance">%1$d metros de distância</string>
+    <string name="avaliar">avaliar</string>
+    <string name="avaliar_now">avalie agora este local</string>
+    <string name="not_rated">Acessibilidade do local não avaliada</string>
+    <string name="place_acessible">Local acessível</string>
+    <string name="place_not_acessible">Local não acessível</string>
+    <string name="place_parcially_acessible">Local parcialmente acessível</string>
+    <string name="has_estacionamento">Este local possui vaga de estacionamento reservada para cadeirante</string>
+    <string name="entrada">Entrada</string>
+    <string name="has_entrada_boa">A entrada é boa para pessoas com dificuldade de locomoção</string>
+    <string name="circulacao_interna">Circulação interna</string>
+    <string name="has_circulacao_interna">Neste local há facilidade de circulação interna</string>
+    <string name="mapa_tatil">Mapa tátil</string>
+    <string name="has_mapa_tatil">Neste local existe mapa tátil do espaço interno em braile ou alto-relevo</string>
+    <string name="wc_acessivel">Banheiro acessível</string>
+    <string name="has_banheiro_acessivel">Neste local existe banheiro acessível</string>
+    <string name="wc_family">Banheiro família</string>
+    <string name="has_banheiro_family">Neste local existe banheiro família</string>
+    <string name="comentario">Comentários</string>
+    <string name="moveis">Mobiliário acessível e reservado</string>
+    <string name="has_moveis">Neste local existe mobiliário acessível e reservado para pessoas com deficiência ou idosos</string>
+
+    <string name="category_choose">Escolha uma categoria</string>
+    <string name="category_all">Todas as categorias</string>
+    <string name="category_expand">Clique para expandir as categorias</string>
+    <string name="todas_as_categorias">Todas as categorias</string>
+    <string name="arte_e_lazer">Arte e Lazer</string>
+    <string name="faculdade_e_educa_o">Faculdades, Escolas e Educação</string>
+    <string name="eventos">Eventos</string>
+    <string name="vida_noturna">Vida Noturna</string>
+    <string name="alimenta_o">Alimentação</string>
+    <string name="ar_livre_e_recrea_o">Ar Livre e Recreação</string>
+    <string name="profissional_e_outros">Profissional e outros</string>
+    <string name="resid_ncia">Residência</string>
+    <string name="lojas_e_servi_os">Lojas e Serviços</string>
+    <string name="viagem_e_transporte">Viagem e Transporte</string>
+    <string name="igrejas_e_religi_o">Igrejas e religião</string>
+
+    <string name="selecione_menu">selecione uma opção no menu. Há uma barra de rolagem horizontal</string>
+    <string name="ocorrencia_na">%1$s na %2$s</string>
+    <string name="locais_desc">Nesta tela você pode consultar a acessibilidade de estabelecimentos na cidade</string>
+    <string name="pub_marker_face">Deseja publicar a ocorrência no Facebook?</string>
+    <string name="dont_ask_again">Não perguntar novamente</string>
+
+    <string name="user_foto_rate">Foto do usuário que avaliou o local</string>
+    <string name="rate_for">Avaliado por: %1$s</string>
+    <string name="nota_estab">Nota do Estabelecimento</string>
+
+
+    <string name="maps_app_not_instaled">Google Maps não instalado. Por favor, instale para continuar!</string>
+
+</resources>

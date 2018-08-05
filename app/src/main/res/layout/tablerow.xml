@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/tableCell1"
+        android:layout_width="50dp"
+        android:layout_column="0"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/posicao_placar_geral"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/orange"  />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgProfileGeneralScore"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_column="1"
+        android:paddingTop="5dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/img_profile_vlm"
+        android:contentDescription="@string/foto_perfil_placar"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"/>
+
+    <TextView
+        android:id="@+id/tableCell2"
+        android:layout_width="wrap_content"
+        android:layout_column="2"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:contentDescription="@string/nome_pessoa"
+        android:textColor="@color/darkGray"  />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgCoins"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_column="3"
+        android:layout_weight="0.1"
+        android:src="@drawable/coins"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/img_moeda"/>
+
+    <TextView
+        android:id="@+id/tableCell3"
+        android:layout_width="80dp"
+        android:layout_column="4"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:contentDescription="@string/qtde_moedas"
+        android:textColor="@color/darkGray"  />
+
+</TableRow>

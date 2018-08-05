@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.cardapia.company.acessmap.PreferencesActivity$PlaceholderFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name_saud_init"
+            android:src="@drawable/logo_moovdis" />
+
+        <TextView
+            android:id="@+id/lblBemVindo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img_logo"
+            android:fontFamily="casual"
+            android:text="@string/config_condition"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchDefVisual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblBemVindo"
+            android:layout_marginTop="22dp"
+            android:minHeight="@dimen/blind_min_height_touch_area"
+            android:text="@string/sou_def_visual"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtDetVisual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/switchDefVisual"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_sou_def_visual"
+            android:visibility="gone" />
+
+
+        <Switch
+            android:id="@+id/switchCadeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtDetVisual"
+            android:layout_marginTop="15dp"
+            android:minHeight="@dimen/blind_min_height_touch_area"
+            android:text="@string/uso_cadeira"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtDetCadeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/switchCadeira"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_desloco_cadeira"
+            android:visibility="gone"
+            tools:ignore="RelativeOverlap" />
+
+
+        <TextView
+            android:id="@+id/lblLarguraCadeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLargCadeira"
+            android:layout_alignBottom="@+id/txtLargCadeira"
+            android:layout_alignParentStart="true"
+            android:labelFor="@+id/txtLargCadeira"
+            android:text="@string/text_largura_cadeira"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/txtLargCadeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtDetCadeira"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@+id/switchDefVisual"
+            android:ems="3"
+            android:inputType="numberSigned"
+            android:maxLines="1"
+            android:minHeight="@dimen/blind_min_height_touch_area"
+            android:text="@string/largura_cadeira_default"
+            android:visibility="gone" />
+
+        <Switch
+            android:id="@+id/switchOutros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtLargCadeira"
+            android:layout_marginTop="15dp"
+            android:minHeight="@dimen/blind_min_height_touch_area"
+            android:text="@string/outras_defs"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/txtInformeDecifiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/switchOutros"
+            android:layout_marginTop="15dp"
+            android:hint="@string/informe_qual"
+            android:labelFor="@+id/txtLargCadeira"
+            android:minHeight="@dimen/blind_min_height_touch_area"
+            android:textCursorDrawable="@drawable/text_color_cyan"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:met_floatingLabel="highlight"
+            app:met_helperText="@string/informe_helper"
+            app:met_helperTextColor="#795548"
+            app:met_maxCharacters="30"
+            app:met_singleLineEllipsis="true" />
+
+        <Switch
+            android:id="@+id/switchNoDef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtInformeDecifiencia"
+            android:layout_marginTop="15dp"
+            android:minHeight="@dimen/blind_min_height_touch_area"
+            android:text="@string/no_def"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDetNoDef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/switchNoDef"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_no_def"
+            android:visibility="gone"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.cardapia.company.acessmap.ScoreboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Placar Geral -->
+        <FrameLayout
+            android:id="@+id/view_general_score_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:layout_marginTop="0.001dp"
+            android:background="@drawable/tool_bar">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/img_trofeu"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/poddium"/>
+
+            <TextView
+                android:id="@+id/txt_desc_placar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClickTextPlacar"
+                android:paddingEnd="10dp"
+                android:paddingStart="60dp"
+                android:text="@string/desc_placar_geral"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/aba_general_score"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_general_score_info"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/table_general_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="80dp">
+
+            </TableLayout>
+
+        </ScrollView>
+
+        <!-- Fim placar Geral -->
+
+        <!-- Placar Semanal -->
+        <FrameLayout
+            android:id="@+id/view_weekly_score_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:visibility="invisible"
+            android:layout_marginTop="0.001dp"
+            android:background="@drawable/tool_bar">
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/img_trofeu"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/poddium"/>
+
+            <TextView
+                android:id="@+id/txt_desc_placar_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClickTextPlacar"
+                android:paddingEnd="10dp"
+                android:paddingStart="60dp"
+                android:text="@string/desc_placar_semanal"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/aba_weekly_score"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_weekly_score_info"
+            android:visibility="invisible"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/table_weekly_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="80dp">
+
+            </TableLayout>
+
+        </ScrollView>
+
+        <!-- Fim placar Geral -->
+
+
+        <!-- Meu Placar -->
+        <FrameLayout
+            android:id="@+id/view_my_score_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.001dp"
+            android:background="@drawable/tool_bar"
+            android:visibility="invisible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_profile_my_scorecard"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/foto_perfil"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/profile_icon"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"/>
+
+            <TextView
+                android:id="@+id/txt_desc_my_placar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="60dp"
+                android:text="@string/desc_placar_individual"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/aba_my_score_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_my_score_info"
+            android:scrollbars="vertical"
+            android:visibility="invisible">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/aba_my_score"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/txt_sua_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/voce_usuario"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:padding="2dp"
+                android:src="@drawable/applause"
+                android:contentDescription="@string/apauso_description" />
+
+            <mobi.gspd.segmentedbarview.SegmentedBarView
+                android:id="@+id/seg_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:padding="10dp"
+                app:sbv_empty_segment_text="@string/no_info"
+                app:sbv_segment_gap_width="10dp"
+                app:sbv_segment_text_size="20sp"
+                app:sbv_show_description_text="true"
+                app:sbv_show_segment_text="true"
+                app:sbv_side_style="angle"
+                app:sbv_side_text_style="oneSided"
+                app:sbv_value_sign_round="8dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="140dp">
+
+                <com.txusballesteros.widgets.FitChart
+                    android:id="@+id/fitChart"
+                    style="@style/chart_style"
+                    android:layout_gravity="center"
+                    app:animationMode="overdraw"
+                    app:valueStrokeColor="#2F4F2F" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtQtdeMoedas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxWidth="150dp"
+                        android:text="@string/voce_tem_moedas"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtAtingaMeta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxWidth="150dp"
+                        android:text="@string/meta_moedas"
+                        android:textColor="#757575"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/gradient_frame">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/location_back"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/txtVoceRealizou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/voce_realizou"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtQtdeMarc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/qtde_marcacoes"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txtQtdeFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/qtde_fotos"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+            </FrameLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </FrameLayout>
+        </ScrollView>
+
+        <!-- Fim placar Geral -->
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Key for Api Umbrella -->
+    <string name="api_umbrella_key" translatable="false"></string>
+    <string name="map_box_key" translatable="false"></string>
+    <string name="here_app_id" translatable="false"></string>
+    <string name="here_app_code" translatable="false"></string>
+    <string name="osm_key" translatable="false" ></string>
+
+    <string name="fsq_client_id"></string>
+    <string name="fsq_client_secret"></string>
+
+</resources>

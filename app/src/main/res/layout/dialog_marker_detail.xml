@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6e9e9e9"
+    tools:context="br.com.cardapia.company.acessmap.MarkerDetailActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll_detail_marker"
+        android:layout_above="@id/detail_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_detalhe_marcacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/tipo_marcacao"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/no_comments"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <br.com.felix.imagezoom.ImageZoom
+                android:id="@+id/img_local_ocorrencia"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:maxHeight="400dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/local_photo_desc"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/maps_marker" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/endereco_marker"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_button"
+            android:text="@string/liked"
+            android:layout_below="@id/txt_endereco"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_no_exist"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/btn_like"
+            android:layout_below="@id/txt_endereco"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_button_red"
+            android:text="@string/no_exist"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

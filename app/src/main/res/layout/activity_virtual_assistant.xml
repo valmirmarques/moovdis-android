@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.cardapia.company.acessmap.VirtualAssistantActivity"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <com.dragankrstic.autotypetextview.AutoTypeTextView
+        xmlns:attv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lbl_assist_saudacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="22dp"
+        android:textSize="20sp"
+        android:textColor="#20e3b2"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:onClick="startAssistance"
+        android:hint="@string/assistant_saudation"
+        attv:encryptionSpeed="65"
+        attv:typingSpeed="65"
+        attv:decryptionSpeed="65"
+        attv:animateTextTypeWithMistakes="@string/assistant_saudation"/>
+
+    <ImageButton
+        android:id="@+id/btn_mic_assistant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@null"
+        android:contentDescription="@string/tap_on_mic_assitant"
+        android:padding="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/robot" />
+
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+{ "count": "4",
+  "step1": {
+    "fields": [
+      {
+        "key": "lugarAcessivel",
+        "type": "radio",
+        "label": "Do you consider this place accessible?",
+        "options": [
+          {
+            "key": "YES",
+            "text": "Accessible for people with limited mobility"
+          },
+          {
+            "key": "MID",
+            "text": "Partly accessible for people with limited mobility"
+          },
+          {
+            "key": "NO",
+            "text": "Not accessible for people with limited mobility"
+          }
+        ]
+      }
+    ],
+    "title": "Rate the accessibility",
+    "next": "step2"
+  },
+  "step2": {
+    "fields": [
+      {
+        "key": "hasEstacionamento",
+        "type": "radio",
+        "label": "Does it have a parking space reserved for a wheelchair?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "key": "hasEntradaBoa",
+        "type": "radio",
+        "label": "Is the entrance good for people with limited mobility?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "key": "hasMapaTatil",
+        "type": "radio",
+        "label": "Does it have a tactile map of the internal space in braille or emboss?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "No"
+          }
+        ]
+      }
+    ],
+    "title": "Ease of access",
+    "next": "step3"
+  },
+  "step3": {
+    "fields": [
+      {
+        "key": "hasCirculacaoInterna",
+        "type": "radio",
+        "label": "Is there easy internal circulation?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "key": "hasWc",
+        "type": "radio",
+        "label": "Does it have a restroom with accessibility?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "Yes"
+          }
+        ]
+      },
+      {
+        "key": "hasFraudario",
+        "type": "radio",
+        "label": "Does it have a family restroom?",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "key": "hasMesa",
+        "type": "radio",
+        "label": "Does the venue have adapted and reserved furniture? (Example, table in a restaurant reserved for wheelchair users)",
+        "options": [
+          {
+            "key": "true",
+            "text": "Yes"
+          },
+          {
+            "key": "false",
+            "text": "No"
+          }
+        ]
+      }
+    ],
+    "title": "Internal space of venue",
+    "next" : "step4"
+  },
+  "step4": {
+    "fields":[
+      {
+        "key":"comment",
+        "type":"edit_text",
+        "hint":"Write a comment"
+      }
+    ],
+    "title": "Comments"
+  }
+}

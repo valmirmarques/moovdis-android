@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY"></string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET"></string>
+    <string name="com.twitter.sdk.android.TOKEN"></string>
+    <string name="com.twitter.sdk.android.TOKEN_SECRET"></string>
+</resources>

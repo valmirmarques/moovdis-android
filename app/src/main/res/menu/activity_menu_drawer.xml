@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nag_begin"
+            android:icon="@drawable/ic_play_64"
+            android:title="@string/action_begin" />
+        <item
+            android:id="@+id/nav_pref"
+            android:icon="@drawable/ic_settings_applications_white_24dp"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/baseline_map_24"
+            android:title="@string/action_map" />
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/baseline_store_mall_directory_black_48"
+            android:title="@string/action_places" />
+        <item
+            android:id="@+id/nav_placar"
+            android:icon="@drawable/scoreboard"
+            android:title="@string/action_placar" />
+        <item
+            android:id="@+id/nav_rotas"
+            android:icon="@drawable/ic_directions_white_24dp"
+            android:title="@string/action_minhas_rotas" />
+        <item
+            android:id="@+id/nav_feeds"
+            android:icon="@drawable/rss_48"
+            android:title="@string/actions_feeds" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/baseline_event_24"
+            android:title="@string/action_event" />
+        <item
+            android:id="@+id/nav_virtual_assit"
+            android:icon="@drawable/robot_assistant"
+            android:title="@string/action_virtual_assist" />
+
+        <item
+            android:id="@+id/nav_invite_friends"
+            android:icon="@drawable/if_invite_friends"
+            android:title="@string/action_invite_friends" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/icon_about"
+            android:title="@string/action_about" />
+
+        <item
+            android:id="@+id/nav_test"
+            android:visible="false"
+            android:icon="@drawable/logo_moovdis"
+            android:title="@string/action_test" />
+
+    </group>
+
+
+</menu>

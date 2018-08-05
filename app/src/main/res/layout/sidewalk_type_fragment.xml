@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:clickable="true"
+    android:filterTouchesWhenObscured="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SidewalkTypeActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_bottom_sidewalk"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCategoryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:text="@string/sidewalk_type"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/slider"
+                layout="@layout/item_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_grau_dificuldade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:lines="2"
+                        android:text="@string/grau_dificuldade"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <SeekBar
+                        android:id="@+id/seek_bar_dificuldade"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/grau_dificuldade"
+                        android:max="5"
+                        android:progress="1" />
+
+                    <TextView
+                        android:id="@+id/txt_grau_dificuldade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/grau_1"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- exibe apenas na segunda fase -->
+            <LinearLayout
+                android:id="@+id/layout_result_sidewalk"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_sidewalk_selected"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:contentDescription="@string/img_selected"
+                    android:src="@drawable/calc_1"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_sidewalk_selected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sidewalk_type"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_toque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/touch_map_sidewalk"
+                        android:textAlignment="center"
+                        android:textColor="#ffff8800"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_sidewalk_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/distance_metros"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Google maps Fragment -->
+            <com.google.android.gms.maps.MapView xmlns:map="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map_detail_sidewalk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                map:cameraTilt="30"
+                map:uiZoomControls="true"
+                map:uiZoomGestures="true" />
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom_sidewalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_cancelar_sidewalk"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_button_red"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/img_indicator_page"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/page_1_2"
+            android:src="@drawable/page_1_of_2" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_next"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:minHeight="50dp"
+            app:cardCornerRadius="@dimen/bottom_navigation_elevation">
+
+            <ImageButton
+                android:id="@+id/btn_ok_1_sidewalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:contentDescription="@string/ok"
+                android:src="@drawable/next"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txt_ok_1_sidewalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="@string/next"
+                android:textAllCaps="true" />
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_ok_2_sidewalk"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_button"
+            android:text="@string/ok"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

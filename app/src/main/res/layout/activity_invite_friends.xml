@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.cardapia.company.acessmap.InviteFriendsActivity">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/invite_friends_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/appbar_padding_top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invite_request"
+                android:textAlignment="center"
+                android:textColor="@color/com_facebook_messenger_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/two_friends"
+                android:src="@drawable/cats_image" />
+
+            <Button
+                android:id="@+id/btn_invite_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffa700"
+                android:text="@string/invite_google"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_invite_whats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/stroke_size"
+                android:background="#008744"
+                android:contentDescription="@string/friends_image"
+                android:text="@string/invite_whats"
+                android:textColor="#FFFFFF" />
+
+            <!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invite_facebook"
+                android:id="@+id/btn_invite_facebook"
+                android:background="#0057e7"
+                android:onClick="fbLogin"
+                android:layout_marginTop="@dimen/stroke_size"
+                android:textColor="#FFFFFF"/>
+            -->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

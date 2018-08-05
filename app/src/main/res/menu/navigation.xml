@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_general"
+        android:icon="@drawable/score_general"
+        android:title="@string/placar_geral" />
+
+    <item
+        android:id="@+id/navigation_weekly"
+        android:icon="@drawable/score_general"
+        android:title="@string/placar_semanal" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/score_mine"
+        android:title="@string/meu_placar" />
+
+</menu>

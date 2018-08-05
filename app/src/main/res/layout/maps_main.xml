@@ -1,0 +1,347 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/maps_description"
+    android:focusable="true"
+    android:keepScreenOn="true"
+    tools:context="br.com.cardapia.company.acessmap.MapsActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:accessibilityLiveRegion="assertive"
+        android:importantForAccessibility="yes"
+        map:cameraTilt="30"
+        map:cameraZoom="17"
+        map:mapType="normal"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"
+        tools:context="br.com.cardapia.company.acessmap.MapsActivity" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/local_description">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/back"
+            android:onClick="onClickBackButton"
+            android:paddingTop="7dp"
+            android:src="@drawable/ic_navigate_before_black_24dp" />
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:text="@string/location_not_determinated"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_alertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/colorBackTransp"
+        android:gravity="start"
+        android:lines="2"
+        android:text="@string/alertas_next"
+        android:textAlignment="center"
+        android:textColor="@color/colorlightseagreen"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmbReportGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_alertas"
+        android:layout_alignEnd="@+id/card_places"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/report_access"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_9_1"
+        app:bmb_dotRadius="0dp"
+        app:bmb_draggable="true"
+        app:bmb_piecePlaceEnum="piecePlace_dot_9_1"
+        app:bmb_showMoveEaseEnum="outBack">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/report_access"
+            android:src="@drawable/baseline_add_location_black_48" />
+
+    </com.nightonke.boommenu.BoomMenuButton>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmbReportBad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bmbReportGood"
+        android:layout_alignStart="@+id/bmbReportGood"
+        android:contentDescription="@string/report_inaaccess"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_9_1"
+        app:bmb_dotRadius="0dp"
+        app:bmb_draggable="true"
+        app:bmb_piecePlaceEnum="piecePlace_dot_9_1"
+        app:bmb_showMoveEaseEnum="outBack">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/report_inaaccess"
+            android:src="@drawable/baseline_add_location_black_48"/>
+
+    </com.nightonke.boommenu.BoomMenuButton>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_places"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:contentDescription="@string/tap_on_mic"
+        android:focusable="true"
+        app:backgroundTint="@null"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_mic" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt_alertas"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:contentDescription="@string/tracar_rota"
+        android:focusable="true"
+        android:visibility="gone"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_navigation_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sidewalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bmbReportBad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        app:backgroundTint="@color/color_dialog_content"
+        app:elevation="10dp"
+        android:contentDescription="@string/inform_sidewal_type"
+        android:focusable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_select_all_white_48dp" />
+
+    <!--
+    <FrameLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="#E6e9e9e9"
+        android:layout_height="match_parent" />
+     -->
+
+    <!-- XXX -->
+
+    <!-- Area do Bottom Sheet -->
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/bottom_sheet1"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@drawable/gradient_top"
+            android:clipToPadding="true"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/etapa_result"
+                    android:padding="8dp"
+                    android:src="@android:drawable/button_onoff_indicator_on" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/route_option"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/route_option"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageButton
+                        android:id="@+id/btn_route_prev"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@null"
+                        android:contentDescription="@string/previous_route"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_navigate_before_black_24dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_route_next"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@null"
+                        android:contentDescription="@string/next_route"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_navigate_next_black_24dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/totalDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/info_distancia"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="@string/versao_beta"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnEtapas"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/round_button"
+                        android:drawableStart="@android:drawable/ic_dialog_map"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="@string/etapa"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/btnNavegar"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="160dp"
+                        android:background="@drawable/round_button"
+                        android:drawableStart="@drawable/ic_navigation_white_24dp"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="@string/navigation"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_etapas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Dymamic -->
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <ProgressBar
+                    android:id="@+id/determinateBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <WebView
+                    android:id="@+id/web_elevation"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/elevation_description"
+                    tools:ignore="WebViewLayout" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
